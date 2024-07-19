@@ -1,40 +1,166 @@
-body{
-    background-color: #E5E5FD;
-    border: 10px solid #1d1e4c;
-    min-height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+    font-weight: 600;
 }
 
-/* img1{   id=img1 */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
 
-#topsec {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-    margin-right: px; */
-    margin-top: 100px;
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(fonts/Gilroy-Light.ttf);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
-    background-color: aqua;
-    
-     /* To make it a circle with radius half of width/height */
+    padding: 0px 40px;
 }
 
-#topsec img {
-    width: 300px; /* Adjust the width as needed */
-    height: 350px; /* Adjust the height as needed */
-    border-radius: 180px; /* To maintain the circle shape */
+
+.part1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 1px;
 }
-#topsec h1{
-    /* margin-left: 50px; */
-    margin-top: 180px;
-    font-size: 40px;
-    font-weight: bold;
 
+.part1 button {
+    font-size: 17px;
+    border: 1.5px solid black;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.part1 i {
+    font-size: 17px;
+    border: 1.5px solid black;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.part2 h1 {
+    font-weight: 500;
     text-transform: uppercase;
-    color: #1d1e4c !important;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.5ch;
+}
+
+.part3 {
+    gap: 0px;
+}
+
+.part3 button {
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    background-color: white;
+    font-size: 16px;
+    align-items: center;
+
+}
+
+.part3>#signbtn {
+    border: none !important;
+    color: white;
+    background-color: rgb(241, 118, 73);
+}
+
+/* directing accessing the child  */
+
+#main>h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: myFont2;
+    font-weight: px;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    height: 380px;
+    width: 300px;
+
+    /* for perfect image:  */
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+#img1 {
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+#img2 {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#img3 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+
+
+
+#lowerH {
+    position: absolute;
+    align-items: flex-start;
+    justify-content: end;
+    font-size: 15px;
+    top: 90%;
+    left: 3%;
+}
+
+#iconsDiv {
+    position: absolute;
+    font-weight: 10px;
+    top: 87%;
+    left: 86%;
+    font-size: 24px;
+
+}
+
+#iconsDiv i {
+    margin-right: 10px;
+    /* Adjust the spacing between icons */
+    font-weight: 10px;
+}
+
+#iconsDiv h3 {
+
+    font-size: 14px;
+    font-weight: 10px;
+    font-family: myFont2;
+    margin-top: 6px;
 }
